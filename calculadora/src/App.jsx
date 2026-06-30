@@ -6,7 +6,26 @@ function App() {
     const [res, setRes] = useState("")
 
     function addChar(char) {
+        if (res == "Erro") {
+            setRes(() => "")
+        }
+
         setRes((prevRes) => prevRes + char)
+    }
+
+    function calculate(res) {
+        try {
+            if (res != "" && res.length > 0) {
+                const result = eval(res)
+                setRes(() => result)
+            }
+        } catch {
+            setRes(() => "Erro")
+        }
+    }
+
+    function clearRes() {
+        setRes(() => "")
     }
 
     return (
@@ -22,6 +41,13 @@ function App() {
             <button onClick={() => addChar("7")}>7</button>
             <button onClick={() => addChar("8")}>8</button>
             <button onClick={() => addChar("9")}>9</button>
+            <button onClick={() => addChar(".")}>,</button>
+            <button onClick={() => addChar("+")}>+</button>
+            <button onClick={() => addChar("-")}>-</button>
+            <button onClick={() => addChar("*")}>*</button>
+            <button onClick={() => addChar("/")}>/</button>
+            <button onClick={() => calculate(res)}>Calcular</button>
+            <button onClick={() => clearRes()}>Limpar</button>
             <Resultado res={res}></Resultado>
         </div>
     )
