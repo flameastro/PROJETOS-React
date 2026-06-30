@@ -1,6 +1,6 @@
 function Resultado({res}) {
     return (
-        <div>
+        <div className="res">
             <h1>{res}</h1>
         </div>
     )
