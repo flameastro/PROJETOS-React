@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
+
 import Resultado from './components/Resultado'
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
         setRes(() => "")
     }
 
+    function deleteLastChar() {
+        setRes((prevRes) => prevRes.slice(0, prevRes.length-1))
+    }
+
     return (
         <div>
             <h1>Calculadora</h1>
@@ -48,6 +53,7 @@ function App() {
             <button onClick={() => addChar("/")}>/</button>
             <button onClick={() => calculate(res)}>Calcular</button>
             <button onClick={() => clearRes()}>Limpar</button>
+            <button onClick={() => deleteLastChar()}>Delete</button>
             <Resultado res={res}></Resultado>
         </div>
     )
