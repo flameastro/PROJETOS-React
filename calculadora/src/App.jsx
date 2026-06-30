@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 
 import Resultado from './components/Resultado'
@@ -30,32 +29,37 @@ function App() {
     }
 
     function deleteLastChar() {
-        setRes((prevRes) => prevRes.slice(0, prevRes.length-1))
+        setRes((prevRes) => prevRes.slice(0, prevRes.length - 1))
     }
 
     return (
-        <div>
-            <h1>Calculadora</h1>
-            <button onClick={() => addChar("0")}>0</button>
-            <button onClick={() => addChar("1")}>1</button>
-            <button onClick={() => addChar("2")}>2</button>
-            <button onClick={() => addChar("3")}>3</button>
-            <button onClick={() => addChar("4")}>4</button>
-            <button onClick={() => addChar("5")}>5</button>
-            <button onClick={() => addChar("6")}>6</button>
-            <button onClick={() => addChar("7")}>7</button>
-            <button onClick={() => addChar("8")}>8</button>
-            <button onClick={() => addChar("9")}>9</button>
-            <button onClick={() => addChar(".")}>,</button>
-            <button onClick={() => addChar("+")}>+</button>
-            <button onClick={() => addChar("-")}>-</button>
-            <button onClick={() => addChar("*")}>*</button>
-            <button onClick={() => addChar("/")}>/</button>
-            <button onClick={() => calculate(res)}>Calcular</button>
-            <button onClick={() => clearRes()}>Limpar</button>
-            <button onClick={() => deleteLastChar()}>Delete</button>
-            <Resultado res={res}></Resultado>
-        </div>
+        <main>
+            <div className="titleSection">
+                <h1 className="titleText">Calculadora</h1>
+            </div>
+
+            <div className="calculatorSection">
+                <button className="calculatorBtn" onClick={() => addChar("0")}>0</button>
+                <button className="calculatorBtn" onClick={() => addChar("1")}>1</button>
+                <button className="calculatorBtn" onClick={() => addChar("2")}>2</button>
+                <button className="calculatorBtn" onClick={() => addChar("3")}>3</button>
+                <button className="calculatorBtn" onClick={() => addChar("4")}>4</button>
+                <button className="calculatorBtn" onClick={() => addChar("5")}>5</button>
+                <button className="calculatorBtn" onClick={() => addChar("6")}>6</button>
+                <button className="calculatorBtn" onClick={() => addChar("7")}>7</button>
+                <button className="calculatorBtn" onClick={() => addChar("8")}>8</button>
+                <button className="calculatorBtn" onClick={() => addChar("9")}>9</button>
+                <button className="calculatorBtn" onClick={() => addChar(".")}>,</button>
+                <button className="calculatorBtn" onClick={() => addChar("+")}>+</button>
+                <button className="calculatorBtn" onClick={() => addChar("-")}>-</button>
+                <button className="calculatorBtn" onClick={() => addChar("*")}>*</button>
+                <button className="calculatorBtn" onClick={() => addChar("/")}>/</button>
+                <button className="calculatorBtn" onClick={() => calculate(res)}>Calcular</button>
+                <button className="calculatorBtn" onClick={() => clearRes()}>Limpar</button>
+                <button className="calculatorBtn" onClick={() => deleteLastChar()}>Delete</button>
+                <Resultado res={res}></Resultado>
+            </div>
+        </main>
     )
 }
 
