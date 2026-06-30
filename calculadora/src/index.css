@@ -55,9 +55,9 @@ body {
 
 main {
     background-color: var(--color-indigo-800);
-    padding: 10px;
-    border-radius: 12px;
-    width: calc(90px * 4);
+    padding: 15px;
+    border-radius: 17px;
+    width: calc(100px * 4);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -98,12 +98,13 @@ button.operation {
 
 .calculatorSection {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .res {
     height: 75px;
-    width: 100%;
+    width: calc(90px * 4);
     background-color: var(--color-blue-400);
     margin: 10px;
     border-radius: 17px;
