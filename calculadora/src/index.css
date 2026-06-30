@@ -23,6 +23,20 @@
     --color-indigo-800: oklch(39.8% 0.195 277.366);
     --color-indigo-900: oklch(35.9% 0.144 278.697);
     --color-indigo-950: oklch(25.7% 0.09 281.288);
+
+    --operation: oklch(87.9% 0.169 91.605);
+    --special: oklch(57.7% 0.245 27.325);
+
+    /* Fonts -> https://fonts.google.com/ */
+    --font-archivo: "Archivo", sans-serif;
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-lexend: "Lexend", sans-serif;
+    --font-manrope: "Manrope", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
+    --font-space: "Space Grotesk", sans-serif;
+    --font-tilt: "Tilt Warp", sans-serif;
 }
 
 * {
@@ -31,9 +45,74 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--color-blue-50);
-
+    font-family: var(--font-space);
 }
 
 body {
     background-color: var(--color-indigo-950);
+    margin-top: 75px;
+}
+
+main {
+    background-color: var(--color-indigo-800);
+    padding: 10px;
+    border-radius: 12px;
+    width: calc(90px * 4);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color-blue-500);
+    border: none;
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: all 0.15s ease-in;
+}
+
+button:hover {
+    filter: brightness(75%);
+    box-shadow: 0 0 25px var(--color-indigo-600);
+}
+
+button:focus {
+    filter: brightness(50%);
+}
+
+button.special {
+    background-color: var(--special);
+}
+
+button.operation {
+    background-color: var(--operation);
+}
+
+.calculatorSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res {
+    height: 75px;
+    width: 100%;
+    background-color: var(--color-blue-400);
+    margin: 10px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.res::-webkit-scrollbar {
+    visibility: hidden;
 }
