@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import Resultado from './components/Resultado'
 
 function App() {
