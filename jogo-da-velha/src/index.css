@@ -1,0 +1,32 @@
+:root {
+    --font-archivo: "Archivo", sans-serif;
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-lexend: "Lexend", sans-serif;
+    --font-manrope: "Manrope", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
+    --font-space: "Space Grotesk", sans-serif;
+    --font-tilt: "Tilt Warp", sans-serif;
+
+    --player-x: oklch(68.5% 0.169 237.323);
+    --player-o: oklch(58.6% 0.253 17.585);
+    --primary-color: oklch(87.2% 0.01 258.338);
+    --secondary-color: oklch(70.7% 0.022 261.325);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-space);
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
