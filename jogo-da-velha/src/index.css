@@ -30,3 +30,37 @@ body {
     background-color: var(--primary-color);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.jogo {
+    display: flex;
+    width: calc(160px * 3);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao {
+    width: 150px;
+    height: 150px;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x {
+    background-color: var(--player-x);
+}
+
+.o {
+    background-color: var(--player-o);
+}
