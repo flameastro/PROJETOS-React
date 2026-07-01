@@ -1,7 +1,7 @@
-function Message({ prompt }) {
+function Message({ prompt, className}) {
     return (
         <div>
-            <p>{prompt}</p>
+            <p className={className}>{prompt}</p>
         </div>
     )
 }
