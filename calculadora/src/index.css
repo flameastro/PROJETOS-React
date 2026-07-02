@@ -103,6 +103,7 @@ button.operation {
 }
 
 .res {
+    font-size: 10px;
     height: 75px;
     width: calc(70px * 4);
     background-color: var(--color-blue-400);
@@ -130,7 +131,7 @@ button.operation {
     }
 
     .res {
-        width: calc(70px * 4);
+        width: calc(80px * 4);
     }
 
 }
