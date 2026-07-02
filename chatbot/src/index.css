@@ -22,17 +22,17 @@ html {
     height: 100vh;
 }
 
+main,
+section {
+    width: 450px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
     margin: 25px auto;
     min-height: 100vh;
-}
-
-section {
-    width: 700px;
 }
 
 .messages {
@@ -40,7 +40,7 @@ section {
     flex-direction: column;
 }
 
-.messages > div {
+.messages>div {
     margin: 15px 0;
 }
 
@@ -69,6 +69,10 @@ img {
     right: 5px;
 }
 
+input {
+    width: 320px !important;
+}
+
 button {
     width: 250px;
     margin: 10px;
@@ -76,4 +80,37 @@ button {
 
 summary {
     text-align: center;
+}
+
+
+@media screen and (min-width: 576px) {
+
+    main,
+    section {
+        width: 80vw;
+    }
+
+    input {
+        width: 65vw !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    main,
+    section {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    main,
+    section {
+        width: 800px;
+    }
+
+    input {
+        width: 750px !important;
+    }
 }
