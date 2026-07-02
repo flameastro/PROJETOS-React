@@ -57,7 +57,7 @@ main {
     background-color: var(--color-indigo-800);
     padding: 15px;
     border-radius: 17px;
-    width: calc(100px * 4);
+    width: calc(80px * 4);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -68,8 +68,8 @@ button {
     background-color: var(--color-blue-500);
     border: none;
     margin: 5px;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     border-radius: 12px;
     text-align: center;
     display: flex;
@@ -104,7 +104,7 @@ button.operation {
 
 .res {
     height: 75px;
-    width: calc(90px * 4);
+    width: calc(70px * 4);
     background-color: var(--color-blue-400);
     margin: 10px;
     border-radius: 17px;
@@ -116,4 +116,21 @@ button.operation {
 
 .res::-webkit-scrollbar {
     visibility: hidden;
+}
+
+
+@media screen and (min-width: 576px) {
+    main {
+        width: calc(90px * 4);
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .res {
+        width: calc(70px * 4);
+    }
+
 }
