@@ -22,7 +22,8 @@
     font-family: var(--font-space);
 }
 
-body, html {
+body,
+html {
     height: 100vh;
 }
 
@@ -40,15 +41,15 @@ main {
 
 .jogo {
     display: flex;
-    width: calc(160px * 3);
+    width: calc(90px * 3);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .opcao {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     background-color: var(--secondary-color);
     margin: 5px;
     border-radius: 8px;
@@ -63,4 +64,27 @@ main {
 
 .o {
     background-color: var(--player-o);
+}
+
+
+@media screen and (min-width: 576px) {
+    .jogo {
+        width: calc(20vw * 3);
+    }
+
+    .opcao {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .jogo {
+        width: calc(135px * 3);
+    }
+
+    .opcao {
+        width: 125px;
+        height: 125px;
+    }
 }
