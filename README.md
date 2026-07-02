@@ -20,6 +20,7 @@ Segue uma tabela com cada projeto publicado na [**Netlify**](https://www.netlify
 |----------|-----------|------|
 | Jogo da Velha (Tic-Tac-Toe) | Jogo da Velha clássico para duas pessoas | [Acessar](https://flameastro-tic-tac-toe.netlify.app/) |
 | Calculadora (Calculator) | Calculadora simples com operações matemáticas básicas (+,-,*,/) | [Acessar](https://flameastro-calculator.netlify.app/) |
+| Chatbot | Chatbot simples para conversar com um robô (usando condições simples) | [Acessar](https://flameastro-chatbot.netlify.app/) |
 
 ## 🥀 Issues
 
